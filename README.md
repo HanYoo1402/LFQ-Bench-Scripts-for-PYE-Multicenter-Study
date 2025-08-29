@@ -4,3 +4,19 @@ Repository containing the R scripts used for the analysis of proteomics data pre
 # Abstract
 
 Human plasma is routinely collected during clinical care and constitutes a rich source of biomarkers for diagnostics and patient stratification. Liquid chromatography-mass spectrometry (LC-MS)-based proteomics is a key method for plasma biomarker discovery, but the high dynamic range of plasma proteins poses significant challenges for MS analysis and data processing. To benchmark the quantitative performance of neat plasma analysis, we introduce a multispecies sample set based on a human tryptic plasma digest containing varying low level spike-ins of yeast and E. coli tryptic proteome digests, termed PYE. By analysing the sample set on state-of-the-art LC-MS platforms across twelve different sites in data-dependent (DDA) and data-independent acquisition (DIA) modes, we provide a data resource comprising a total of 1,116 individual LC-MS runs. Centralized data analysis shows that DIA methods outperform DDA-based approaches regarding identifications, data completeness, accuracy, and precision. DIA achieves excellent technical reproducibility, as demonstrated by coefficients of variation (CVs) between 3.3% and 9.8% at protein level. Comparative analysis of different setups clearly shows a high overlap in identified proteins and proves that accurate and precise quantitative measurements are feasible across multiple sites, even in a complex matrix such as plasma, using state-of-the-art instrumentation. The collected dataset, including the PYE sample set and strategy presented, serves as a valuable resource for optimizing the accuracy and reproducibility of LC-MS and bioinformatic workflows for clinical plasma proteome analysis. 
+
+# Raw Mass Spectrometry Data
+
+The raw mass spectrometry data generated in this study along with the database search results have been deposited to the ProteomeXchange Consortium (http://proteomecentral.proteomexchange.org) via the jPOST partner repository with the dataset identifiers PXD056598 (ProteomeXchange) [https://proteomecentral.proteomexchange.org/cgi/GetDataset?ID=PXD056598\] and JPST003358 (jPOST, https://repository.jpostdb.org/entry/JPST003358) (PYE analyses from all partner sites as well as plasma proteome experiments). An overview of deposited data files is available in data_overview.xlsx.
+
+# Requirements  
+- R version 4.3.2 (used for the analysis)  
+- Commonly used R packages:  
+  - `tidyverse`  
+  - `data.table`  
+  - `ggplot2`  
+  - ...
+
+You can install missing packages with:  
+```r
+install.packages(c("tidyverse", "data.table", "ggplot2"))
