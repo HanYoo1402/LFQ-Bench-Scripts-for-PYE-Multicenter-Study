@@ -10,13 +10,12 @@ Human plasma is routinely collected during clinical care and constitutes a rich 
 The raw mass spectrometry data generated in this study along with the database search results have been deposited to the ProteomeXchange Consortium (http://proteomecentral.proteomexchange.org) via the jPOST partner repository with the dataset identifiers PXD056598 (ProteomeXchange) [https://proteomecentral.proteomexchange.org/cgi/GetDataset?ID=PXD056598\] and JPST003358 (jPOST, https://repository.jpostdb.org/entry/JPST003358) (PYE analyses from all partner sites as well as plasma proteome experiments). An overview of deposited data files is available in data_overview.xlsx.
 
 # Requirements  
-- R version 4.3.2 (used for the analysis)  
-- Commonly used R packages:  
+- R version **4.3.2** (used for the analysis)  
+- R packages used throughout the scripts:  
   - `tidyverse`  
   - `data.table`  
   - `ggplot2`  
-  - ...
-
-You can install missing packages with:  
-```r
-install.packages(c("tidyverse", "data.table", "ggplot2"))
+  - `patchwork`  
+  - `stringr`  
+  - `scales`  
+  - `ComplexUpset` 
